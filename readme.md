@@ -1,4 +1,4 @@
 # consolet
 Inspectlet was very broken, so I'm remaking it here. This is only the console, but it is powerful enough to do anything Inspectlet could.
 
-Usage - First, save the text inside inject.txt and consolet.txt as the URLs for bookmarks. Then, click on the inject bookmarklet while in a webpage. Finally, click the consolet bookmarklet.
+Usage - Save the text inside consolet.txt as a bookmark, then use the bookmark while on a web page to open up a JavaScript console.
