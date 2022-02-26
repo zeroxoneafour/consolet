@@ -26,11 +26,6 @@ var consolet_HTML = "<!DOCTYPE html>" +
 // document reference to the consolet webpage
 var consolet_window;
 
-// test for try
-function consolet_test() {
-	return true;
-}
-
 // read the console
 function consolet_readConsole() {
 	consolet_window.getElementById("consoleOutput").innerHTML = consolet_consoleLog.join('\n');
