@@ -6,7 +6,7 @@ consolet_consoleLog = [];
 console.log = function(){
     consolet_consoleLog.push(Array.from(arguments));
     console.stdlog.apply(console, arguments);
-}
+};
 
 // the consolet webpage
 var consolet_HTML = "<!DOCTYPE html>" +
@@ -21,7 +21,7 @@ var consolet_HTML = "<!DOCTYPE html>" +
 "</div>" +
 "<input type='text' id='consoleInput' style='font-family: monospace; width: 100%;'></input>" +
 "</body>" +
-"</html>"
+"</html>";
 
 // document reference to the consolet webpage
 var consolet_window;
@@ -29,7 +29,7 @@ var consolet_window;
 // read the console
 function consolet_readConsole() {
 	consolet_window.getElementById("consoleOutput").innerHTML = consolet_consoleLog.join('\n');
-}
+};
 
 // eval instructions
 function consolet_eval() {
@@ -37,7 +37,7 @@ function consolet_eval() {
 	console.log(eval(consolet_window.getElementById("consoleInput").value));
 	consolet_window.getElementById("consoleInput").value = "";
 	consolet_readConsole();
-}
+};
 
 // create the inspector window
 function consolet_createConsole() {
@@ -51,6 +51,8 @@ function consolet_createConsole() {
 	consolet_window.getElementById("consoleInput").addEventListener("keyup", function(event) {
 		if (event.keyCode === 13) {
 			consolet_eval();
-		}
+		};
 	});
-}
+};
+
+consolet_createConsole();
